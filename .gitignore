@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+Save/
+crash_reports/

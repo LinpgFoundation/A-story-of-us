@@ -1,0 +1,35 @@
+General:
+  back: Back
+  dialog_creator: Dialog Creator
+  game_title: A Story Of Us
+  map_creator: Map Creator
+  save: Save
+MainMenu:
+  menu_main:
+    0_continue: Continue
+    1_chooseChapter: Select Chapter
+    2_dlc: DLC
+    3_workshop: Workshop
+    4_collection: Collection
+    5_setting: Setting
+    6_developer_team: Development Team
+    7_exit: Exit
+  menu_workshop_choice:
+    0_play: Play
+  other:
+    confirm: 'Yes'
+    deny: 'No'
+    exit_confirm: Are you sure you want to quit the game?
+    new_chapter: Create New Chapter
+    new_collection: Create New Collection
+    tip: Tip
+SaveGame: Save Game
+SettingUI:
+  background_music: Background Music
+  cancel: Cancel
+  confirm: Confirm
+  currentLang: English
+  language: Language
+  setting: Setting
+  sound_effects: Sound Effects
+  sound_environment: Environmental Sounds
