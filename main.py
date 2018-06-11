@@ -9,6 +9,9 @@ pygame.init()
 screen = pygame.display.set_mode((800, 640), 0, 32)
 pygame.display.set_caption("A Story Of Us")
 
+'''
+
+'''
 #talking
 #first part
 my_font = pygame.font.SysFont("other/font.ttf", 42)
