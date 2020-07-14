@@ -1,10 +1,11 @@
 #image purchased from unity store and internet
-import pygame
-import time
-from pygame.locals import *
-from sys import exit
 import os
-import os.path
+import time
+from sys import exit
+
+import pygame
+from pygame.locals import *
+
 pygame.init()
 
 screen = pygame.display.set_mode((800, 640), 0, 32)
@@ -70,14 +71,14 @@ text_surface33 = my_font.render('Lucy: "Ok...what a pity."', True, (255,255,255)
 text_surface34 = my_font.render("Then we leave without any sound.", True, (255,255,255))
 text_surface35 = my_font.render("To be continue...", True, (255,255,255))
 text_surface36 = my_font.render("Thanks for playing the demo!", True, (255,255,255))
-text_surface36_1 = my_font.render("Plase click to go back the main menu.", True, (255,255,255))
+text_surface36_1 = my_font.render("Please click to go back the main menu.", True, (255,255,255))
 
 text_surface_i1 = my_font_2.render("Thanks for playing this game!", True, (255,255,255))
 text_surface_i2 = my_font_2.render("Any bug reports please email:", True, (255,255,255))
 text_surface_i3 = my_font_2.render("yoshino1347716570@gmail.com", True, (255,255,255))
 text_surface_i4 = my_font_2.render("No commercial use!", True, (255,255,255))
-text_surface_i5 = my_font_2.render("Virsion:[0.1]", True, (255,255,255))
-text_surface_i6 = my_font_2.render("This virsion is used as a demo.", True, (255,255,255))
+text_surface_i5 = my_font_2.render("Version:[0.1]", True, (255,255,255))
+text_surface_i6 = my_font_2.render("This version is used as a demo.", True, (255,255,255))
 text_surface_i7 = my_font_2.render("It doesn't represent the final effect.", True, (255,255,255))
 
 #https://textcraft.net/
@@ -139,7 +140,7 @@ while True:
       for index in range(len(pressed_array)):
         if pressed_array[index]:
           if index == 0:
-		    mouse_p()
+            mouse_p()
   if screen_num == 0:
     background = bg0
     text_surface = text_surface0
@@ -350,5 +351,3 @@ while True:
     screen.blit(text_surface_6,(250,355))
     screen.blit(text_surface_7,(250,380))
   pygame.display.update()
-
-  
