@@ -1,9 +1,4 @@
-General:
-  back: Back
-  dialog_creator: Dialog Creator
-  game_title: A Story Of Us
-  map_creator: Map Creator
-  save: Save
+GameTitle: A Story Of Us
 MainMenu:
   menu_main:
     0_continue: Continue
@@ -23,13 +18,3 @@ MainMenu:
     new_chapter: Create New Chapter
     new_collection: Create New Collection
     tip: Tip
-SaveGame: Save Game
-SettingUI:
-  background_music: Background Music
-  cancel: Cancel
-  confirm: Confirm
-  currentLang: English
-  language: Language
-  setting: Setting
-  sound_effects: Sound Effects
-  sound_environment: Environmental Sounds
