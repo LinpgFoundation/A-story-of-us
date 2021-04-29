@@ -2,3 +2,6 @@
 __pycache__/
 Save/
 crash_reports/
+dist/
+logs/
+build/
