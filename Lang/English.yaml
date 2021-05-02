@@ -1,4 +1,4 @@
-GameTitle: A Story Of Us
+GameTitle: A Story of Us
 MainMenu:
   menu_main:
     0_continue: Continue
@@ -14,7 +14,5 @@ MainMenu:
   other:
     confirm: 'Yes'
     deny: 'No'
-    exit_confirm: Are you sure you want to quit the game?
-    new_chapter: Create New Chapter
-    new_collection: Create New Collection
+    exit_confirm: Are you sure you want to close the game?
     tip: Tip

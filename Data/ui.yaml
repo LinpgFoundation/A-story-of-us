@@ -1,6 +1,7 @@
 developer_info:
   height: 50%
   hidden: true
+  type: container
   items:
   - color: white
     font_size: 7.5%
@@ -10,25 +11,25 @@ developer_info:
     y: 15%
   - color: white
     font_size: 7.5%
-    src: 'Any bug reports please email:'
+    src: 'If you would like to report any bugs,'
     type: text
     x: center
     y: 25%
   - color: white
     font_size: 7.5%
-    src: yudong9912@gmail.com
+    src: "please email: yudong9912@gmail.com"
     type: text
     x: center
     y: 35%
   - color: white
     font_size: 7.5%
-    src: This version is used as a demo.
+    src: This version is only used as a demo.
     type: text
     x: center
     y: 45%
   - color: white
     font_size: 7.5%
-    src: It doesn't represent the final effect.
+    src: It doesn't represent the final result.
     type: text
     x: center
     y: 55%

@@ -5,8 +5,8 @@ dialogs:
       background_music: bgm1.ogg
       characters_img: null
       content:
-      - This is our world...the place we live...
-      - A world, which hates witches, and its magic.
+      - This is our world... The place we live...
+      - A world that hates the witches, and their magic.
       last_dialog_id: null
       narrator: null
       next_dialog_id:
@@ -18,7 +18,7 @@ dialogs:
       characters_img: null
       content:
       - The king killed nearly all witches.
-      - Fortunately, as two little witches, we are still alive.
+      - Fortunately, we escaped from the massacre but struggled to stay alive.
       last_dialog_id: head
       narrator: null
       next_dialog_id:
@@ -29,7 +29,7 @@ dialogs:
       background_music: bgm1.ogg
       characters_img: null
       content:
-      - We live in deep in the forest, and hope that no one will find us.
+      - We live deep in the forest and hope that no one will find us.
       last_dialog_id: 1
       narrator: null
       next_dialog_id:
@@ -40,7 +40,7 @@ dialogs:
       background_music: bgm1.ogg
       characters_img: null
       content:
-      - Until one day...and this is the beginning of our story.
+      - Until one day... And this is the beginning of our story.
       last_dialog_id: 2
       narrator: null
       next_dialog_id:
@@ -54,7 +54,7 @@ dialogs:
       - lucy.png<d>
       content:
       - Lucy, are you ready to go out?
-      - We have a lot of work to do today!
+      - We have a lot of work that needs to be done today!
       last_dialog_id: 3
       narrator: Maria
       next_dialog_id:
@@ -67,7 +67,7 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - My name is Maria, and, as you see, I am a witch.
+      - My name is Maria, and as you can tell from my outfit, I am a witch.
       last_dialog_id: 4
       narrator: null
       next_dialog_id:
@@ -80,7 +80,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - Yeah! Give me one moment.
+      - Yeah! Give me just one moment.
       last_dialog_id: 5
       narrator: Lucy
       next_dialog_id:
@@ -94,7 +94,7 @@ dialogs:
       - lucy.png<d>
       content:
       - This is my little sister, Lucy. She is a witch, too.
-      - However, she is very naughty and always brings me a lot of troubles.
+      - However, she is quite naughty and always brings me lots of troubles.
       last_dialog_id: 6
       narrator: null
       next_dialog_id:
@@ -107,7 +107,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - Wait a second, you cannot say that!
+      - Come on, maria, you cannot say that!
       last_dialog_id: 7
       narrator: Lucy
       next_dialog_id:
@@ -120,7 +120,7 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - What? I never say any words!
+      - What? I did not even say one word!
       last_dialog_id: 8
       narrator: Maria
       next_dialog_id:
@@ -133,7 +133,7 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - We always argue with each other, but still, we love each other very much.
+      - We always argue with each other, but still, we love each other deep in our hearts.
       last_dialog_id: 9
       narrator: null
       next_dialog_id:
@@ -146,8 +146,8 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - In addition, today we need to go out to find some food.
-      - It has already rained heavily for many days, and we are running out of food.
+      - In addition, today we have to go out and find some food.
+      - It has been rainy for days, and we are running out of food.
       last_dialog_id: 10
       narrator: null
       next_dialog_id:
@@ -160,7 +160,7 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - Nevertheless, today is a sunny day, and it is nice o go out to have some fun.
+      - Nevertheless, today is a sunny day, and it is nice to go out and have some fun.
       last_dialog_id: 11
       narrator: null
       next_dialog_id:
@@ -173,7 +173,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - I miss the sun light so much!
+      - I miss the sunlight so much!
       last_dialog_id: 12
       narrator: Lucy
       next_dialog_id:
@@ -186,8 +186,8 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - Me too! But do not forget our mission
-      - We need to find some food.
+      - So do I! But do not forget our mission.
+      - We have to find some food.
       last_dialog_id: 13
       narrator: Maria
       next_dialog_id:
@@ -200,7 +200,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - Ok.. I see.
+      - Ok... I see.
       last_dialog_id: 14
       narrator: Lucy
       next_dialog_id:
@@ -213,8 +213,8 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - After rainy days, it is easy for us to find a lot of mushrooms in the forest.
-      - Most of them are filled with nutrition and energy. Besides, they are delicious.
+      - After several continuous rainy days, it should be easier for us to find mushrooms in the forest.
+      - Most of them are filled with nutrition and taste delicious.
       last_dialog_id: 15
       narrator: null
       next_dialog_id:
@@ -240,7 +240,7 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - Do you hear something? What is that?
+      - Did you hear anything? What is that?
       last_dialog_id: 17
       narrator: Maria
       next_dialog_id:
@@ -253,7 +253,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - I also hear that. The sound from the horses!
+      - I do hear something. The sounds are coming from the horses!
       last_dialog_id: 18
       narrator: Lucy
       next_dialog_id:
@@ -266,7 +266,7 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - Hide yourself! Right now!
+      - Hide yourself, right now!
       last_dialog_id: 19
       narrator: Maria
       next_dialog_id:
@@ -279,9 +279,9 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - We hide ourselves into the bushes nearby.
-      - We see some knights coming by riding their houses.
-      - Then they stop.
+      - We hide in the bushes nearby.
+      - My instinct is right. Some knights arrive shortly after riding on their houses.
+      - And they stop near the spot where we just stood.
       last_dialog_id: 20
       narrator: null
       next_dialog_id:
@@ -307,7 +307,7 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - It looks like not. Let us be careful and see.
+      - I am not sure. Be quiet, and we will find out.
       last_dialog_id: 22
       narrator: Maria
       next_dialog_id:
@@ -320,7 +320,8 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - Listen up, we must find him! He must be somewhere nearby!
+      - Listen up, we must find him before sunset!
+      - He must be somewhere nearby!
       last_dialog_id: 23
       narrator: Knight
       next_dialog_id:
@@ -359,7 +360,8 @@ dialogs:
       - maria.png
       - lucy.png<d>
       content:
-      - We have to leave now and go home, otherwise they will find us.
+      - We have to leave now and go home.
+      - Otherwise, they may find us, and we will have big trouble.
       last_dialog_id: 26
       narrator: Maria
       next_dialog_id:
@@ -372,7 +374,7 @@ dialogs:
       - maria.png<d>
       - lucy.png
       content:
-      - Ok...what a pity.
+      - Ok... What a pity.
       last_dialog_id: 27
       narrator: Lucy
       next_dialog_id:
@@ -385,7 +387,7 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - Then we leave without any sound.
+      - Then we leave without making any sound.
       last_dialog_id: 28
       narrator: null
       next_dialog_id:
@@ -411,8 +413,8 @@ dialogs:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - Thanks for playing the demo!
-      - Please click to go back the main menu.
+      - Thanks for playing this demo!
+      - Please click to go back to the main menu.
       last_dialog_id: 30
       narrator: null
       next_dialog_id: null
