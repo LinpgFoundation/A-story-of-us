@@ -8,9 +8,9 @@ def dialog(screen: linpg.ImageSurface, chapterType: str, chapterId: int, part: s
     # 卸载音乐
     linpg.unload_all_music()
     # 初始化对话系统模块
-    DIALOG = linpg.DialogSystem()
+    DIALOG: linpg.DialogSystem = linpg.DialogSystem()
     if chapterType is None:
-        DIALOG.load("Save/save.yaml")
+        DIALOG.load(r"Save/save.yaml")
     else:
         DIALOG.new(chapterType, chapterId, part, projectName)
     # DIALOG.auto_save = True
@@ -26,13 +26,14 @@ def dialogEditor(screen: linpg.ImageSurface, chapterType: str, chapterId: int, p
     # 卸载音乐
     linpg.unload_all_music()
     # 加载对话
-    DIALOG: object = linpg.DialogEditor()
+    DIALOG: linpg.DialogEditor = linpg.DialogEditor()
     DIALOG.load(chapterType, chapterId, part, projectName)
     # 主循环
     while DIALOG.is_playing():
         DIALOG.draw(screen)
         linpg.display.flip()
 
+#主菜单
 class MainMenu(linpg.SystemWithBackgroundMusic):
     def __init__(self, screen_size:tuple):
         # 初始化系统模块
@@ -80,7 +81,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
                         self.stop()
                 else:
                     dialog(screen, "main_chapter", 1, "dialog_example")
-            elif event.type == linpg.KEY_DOWN and event.unicode == "p":
+            elif event.type == linpg.KEY.DOWN and event.unicode == "p":
                 dialogEditor(screen, "main_chapter", 1, "dialog_example")
         #画出ui
         self.show_developer_info_button.draw(screen)
@@ -95,15 +96,15 @@ if GAMESTART is True and __name__ == "__main__":
     # 创建窗口
     screen = linpg.display.init_screen()
     # 窗口标题图标
-    linpg.display.set_icon("Assets/image/UI/icon.png")
+    linpg.display.set_icon(r"Assets/image/UI/icon.png")
     linpg.display.set_caption(linpg.get_lang("GameTitle"))
     # 初始化选项菜单
     linpg.init_option_menu(
         screen.get_width() * 0.25,
         screen.get_height() * 0.15,
         screen.get_width() * 0.5,
-        screen.get_height() * 0.7,
-    )
+        screen.get_height() * 0.7
+        )
     # 主菜单模块
     mainMenu = MainMenu(screen.get_size())
     # 主循环
