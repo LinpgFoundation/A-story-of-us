@@ -1,6 +1,6 @@
 try:
     from linpgdev import linpg
-except:
+except BaseException:
     import linpg
 
 # 对话系统
@@ -40,7 +40,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         super().__init__()
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         # 加载主菜单背景
-        self.bg_img = linpg.load_image(r"Assets/image/UI/bg0.png", (0, 0), screen_size[0], screen_size[1])
+        self.bg_img = linpg.load_static_image(r"Assets/image/UI/bg0.png", (0, 0), screen_size[0], screen_size[1])
         # 初始化返回菜单判定参数
         linpg.set_glob_value("BackToMainMenu", False)
         self.set_bgm_volume(linpg.get_setting("Sound", "background_music") / 100)
