@@ -40,19 +40,19 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         super().__init__()
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         # 加载主菜单背景
-        self.bg_img = linpg.load_static_image(r"Assets/image/UI/bg0.png", (0, 0), screen_size[0], screen_size[1])
+        self.bg_img = linpg.load.static_image(r"Assets/image/UI/bg0.png", (0, 0), screen_size)
         # 初始化返回菜单判定参数
-        linpg.set_glob_value("BackToMainMenu", False)
+        linpg.global_value.set("BackToMainMenu", False)
         self.set_bgm_volume(linpg.get_setting("Sound", "background_music") / 100)
         # 开发者信息
-        self.show_developer_info_button = linpg.load_button(
+        self.show_developer_info_button = linpg.load.button(
             r"Assets/image/UI/important.png",
             (screen_size[0] * 0.9, screen_size[1] * 0.05),
             (screen_size[1] * 0.05, screen_size[1] * 0.05),
             200
             )
         self.developer_info = linpg.converter.generate_ui(linpg.load_config(r"Data/ui.yaml", "developer_info"))
-        self.exit_button = linpg.load_button(
+        self.exit_button = linpg.load.button(
             r"Assets/image/UI/quit.png",
             (screen_size[0] * 0.95, screen_size[1] * 0.05),
             (screen_size[1] * 0.05, screen_size[1] * 0.05),
@@ -94,7 +94,7 @@ GAMESTART: bool = True
 # 游戏主进程
 if GAMESTART is True and __name__ == "__main__":
     # 创建窗口
-    screen = linpg.display.init_screen()
+    screen = linpg.display.init()
     # 窗口标题图标
     linpg.display.set_icon(r"Assets/image/UI/icon.png")
     linpg.display.set_caption(linpg.get_lang("GameTitle"))
