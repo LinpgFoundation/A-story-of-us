@@ -14,5 +14,5 @@ MainMenu:
   other:
     confirm: 'Yes'
     deny: 'No'
-    exit_confirm: Are you sure you want to close the game?
+    exit_confirm: Are you sure that you want to quit?
     tip: Tip

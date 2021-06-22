@@ -5,7 +5,7 @@ developer_info:
   items:
   - color: white
     font_size: 7.5%
-    src: Thanks for playing this game!
+    src: Thank you for playing this game!
     type: text
     x: center
     y: 15%
@@ -23,7 +23,7 @@ developer_info:
     y: 35%
   - color: white
     font_size: 7.5%
-    src: This version is only used as a demo.
+    src: This game is designed to showcase Linpg Engine.
     type: text
     x: center
     y: 45%
