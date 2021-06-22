@@ -4,7 +4,7 @@ except BaseException:
     import linpg
 
 # 对话系统
-def dialog(screen: linpg.ImageSurface, chapterType: str, chapterId: int, part: str, projectName: str = None) -> dict:
+def dialog(screen: linpg.ImageSurface, chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
     # 卸载音乐
     linpg.unload_all_music()
     # 初始化对话系统模块
@@ -18,8 +18,6 @@ def dialog(screen: linpg.ImageSurface, chapterType: str, chapterId: int, part: s
     while DIALOG.is_playing():
         DIALOG.draw(screen)
         linpg.display.flip()
-    # 返回玩家做出的选项
-    return DIALOG.dialog_options
 
 # 对话编辑器
 def dialogEditor(screen: linpg.ImageSurface, chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
@@ -100,10 +98,10 @@ if GAMESTART is True and __name__ == "__main__":
     linpg.display.set_caption(linpg.get_lang("GameTitle"))
     # 初始化选项菜单
     linpg.init_option_menu(
-        screen.get_width() * 0.25,
-        screen.get_height() * 0.15,
-        screen.get_width() * 0.5,
-        screen.get_height() * 0.7
+        int(screen.get_width() * 0.25),
+        int(screen.get_height() * 0.15),
+        int(screen.get_width() * 0.5),
+        int(screen.get_height() * 0.7)
         )
     # 主菜单模块
     mainMenu = MainMenu(screen.get_size())
@@ -111,5 +109,6 @@ if GAMESTART is True and __name__ == "__main__":
     while mainMenu.is_playing():
         mainMenu.draw(screen)
         linpg.display.flip()
-    # 释放内容占用
-    linpg.display.quit()
+
+# 释放内容占用
+linpg.display.quit()
