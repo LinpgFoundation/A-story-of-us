@@ -30,7 +30,7 @@ This is a story about us... about how we change the world.
 
 ##### * You have to install the latest version of Linpg Engine!
 
-##### * For more information about Linpg Engine, please visit https://github.com/Tigeia-Workshop/linpg.
+##### * For more information about Linpg Engine, please visit https://github.com/TigeiaWorkshop/linpg.
 
 
 
@@ -52,7 +52,7 @@ This branch holds the current stable version.
 
 # :books: How to contribute / 如何贡献代码
 
-See **[CONTRIBUTING.md](https://github.com/Tigeia-Workshop/A-story-of-us/blob/master/CONTRIBUTING.md)**
+See **[CONTRIBUTING.md](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/CONTRIBUTING.md)**
 
 
 
@@ -64,6 +64,6 @@ https://discord.gg/3wz6bs5jvu
 
 # :memo: License / 版权说明
 
-This game's codes are distributed under the **[GPL-3.0 License](https://github.com/Tigeia-Workshop/A-story-of-us/blob/master/LICENSE)**, which means you can use our codes for commercial purposes as long as you are following the **[GPL-3.0 License](https://github.com/Tigeia-Workshop/A-story-of-us/blob/master/LICENSE)**. However, all images and music used in this game are from third parties, and secondary distribution or commercialization without the authorization of the corresponding creators is strictly prohibited. Also, Tigeia Workshop (the developer of this game and Linpg engine) is not responsible for any disputes and damages caused by neither this game nor Linpg Engine.
+This game's codes are distributed under the **[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**, which means you can use our codes for commercial purposes as long as you are following the **[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**. However, all images and music used in this game are from third parties, and secondary distribution or commercialization without the authorization of the corresponding creators is strictly prohibited. Also, Tigeia Workshop (the developer of this game and Linpg engine) is not responsible for any disputes and damages caused by neither this game nor Linpg Engine.
 
-本游戏的代码将采用**[GPL-3.0 License](https://github.com/Tigeia-Workshop/A-story-of-us/blob/master/LICENSE)**进行分发，这意味着你可以商用我们的代码。然而，需要注意的是，本游戏用到的所有图片和音乐素材均来自第三方，严禁在没有对应创作者授权的情况下进行二次发布或者商用。同时，因使用该游戏或者linpg导致的任何形式的冲突（比如但不仅限法律冲突，经济冲突等）与缇吉娅工坊（本游戏和Linpg引擎的开发者）无关。
+本游戏的代码将采用**[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**进行分发，这意味着你可以商用我们的代码。然而，需要注意的是，本游戏用到的所有图片和音乐素材均来自第三方，严禁在没有对应创作者授权的情况下进行二次发布或者商用。同时，因使用该游戏或者linpg导致的任何形式的冲突（比如但不仅限法律冲突，经济冲突等）与缇吉娅工坊（本游戏和Linpg引擎的开发者）无关。
