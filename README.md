@@ -1,3 +1,11 @@
+# A-story-of-us
+
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/TigeiaWorkshop/A-story-of-us.svg?style=for-the-badge&logo=appveyor?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TigeiaWorkshop/A-story-of-us/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/TigeiaWorkshop/A-story-of-us.svg?style=for-the-badge&logo=appveyor?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TigeiaWorkshop/A-story-of-us/context:python) ![GitHub all releases](https://img.shields.io/github/downloads/TigeiaWorkshop/A-story-of-us/total?style=for-the-badge&logo=appveyor) ![GitHub](https://img.shields.io/github/license/TigeiaWorkshop/A-story-of-us?style=for-the-badge&logo=appveyor)
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TigeiaWorkshop/A-story-of-us?include_prereleases&style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linpg?style=for-the-badge&logo=appveyor)
+
+
+
 # :speech_balloon: Preamble / 前言
 
 This is a story about us... about how we change the world.
@@ -66,4 +74,6 @@ https://discord.gg/3wz6bs5jvu
 
 This game's codes are distributed under the **[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**, which means you can use our codes for commercial purposes as long as you are following the **[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**. However, all images and music used in this game are from third parties, and secondary distribution or commercialization without the authorization of the corresponding creators is strictly prohibited. Also, Tigeia Workshop (the developer of this game and Linpg engine) is not responsible for any disputes and damages caused by neither this game nor Linpg Engine.
 
-本游戏的代码将采用**[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**进行分发，这意味着你可以商用我们的代码。然而，需要注意的是，本游戏用到的所有图片和音乐素材均来自第三方，严禁在没有对应创作者授权的情况下进行二次发布或者商用。同时，因使用该游戏或者linpg导致的任何形式的冲突（比如但不仅限法律冲突，经济冲突等）与缇吉娅工坊（本游戏和Linpg引擎的开发者）无关。
+**Note:** Due to UW Bothell's controversial admission system for CSSE majors, any students and professors from the UW Bothell campus must submit a request to Tigeia Workshop's official email to get permission if they plan to use any stuff from this repository. This requirement does not apply to students and professors from Tacoma and Seattle campuses.
+
+本游戏的代码将采用**[GPL-3.0 License](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/LICENSE)**进行分发，这意味着你可以商用我们的代码。然而，需要注意的是，本游戏用到的所有图片和音乐素材均来自第三方，严禁在没有对应创作者授权的情况下进行二次发布或者商用。同时，因使用该游戏或者Linpg导致的任何形式的冲突（比如但不仅限法律冲突，经济冲突等）与缇吉娅工坊（本游戏和Linpg引擎的开发者）无关。

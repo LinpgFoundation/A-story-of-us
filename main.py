@@ -5,9 +5,7 @@ except Exception:
     import linpg
 
 # 对话系统
-def dialog(
-    chapterType: str, chapterId: int, part: str, projectName: str = None
-) -> None:
+def dialog(chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
     # 卸载音乐
     linpg.media.unload()
     # 初始化对话系统模块
@@ -24,9 +22,7 @@ def dialog(
 
 
 # 对话编辑器
-def dialogEditor(
-    chapterType: str, chapterId: int, part: str, projectName: str = None
-) -> None:
+def dialogEditor(chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
     # 卸载音乐
     linpg.media.unload()
     # 加载对话
@@ -44,9 +40,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         # 初始化系统模块
         super().__init__()
         # 加载主菜单背景
-        self.bg_img = linpg.load.static_image(
-            r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size()
-        )
+        self.bg_img = linpg.load.static_image(r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size())
         # 初始化返回菜单判定参数
         linpg.global_value.set("BackToMainMenu", False)
         # 设置背景音乐
@@ -59,9 +53,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
             200,
         )
-        self.developer_info = linpg.ui.generate(
-            linpg.config.load(r"Data/ui.yaml", "developer_info")
-        )
+        self.developer_info = linpg.ui.generate(linpg.config.load(r"Data/ui.yaml", "developer_info"))
         self.exit_button = linpg.load.button(
             r"Assets/image/UI/quit.png",
             (linpg.display.get_width() * 0.95, linpg.display.get_height() * 0.05),
@@ -89,10 +81,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
                 if not self.developer_info.hidden:
                     if self.developer_info.item_being_hovered == "notice":
                         self.developer_info.hidden = True
-                elif (
-                    self.developer_info.hidden is True
-                    and self.show_developer_info_button.is_hover()
-                ):
+                elif self.developer_info.hidden is True and self.show_developer_info_button.is_hover():
                     self.developer_info.hidden = False
                 elif linpg.is_hover(self.exit_button):
                     if self.exit_confirm_menu.show() == 0:
