@@ -53,18 +53,18 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
             200,
         )
-        self.developer_info = linpg.ui.generate(linpg.config.load(r"Data/ui.yaml", "developer_info"))
+        self.developer_info = linpg.ui.generate("developer_info")
         self.exit_button = linpg.load.button(
             r"Assets/image/UI/quit.png",
             (linpg.display.get_width() * 0.95, linpg.display.get_height() * 0.05),
             (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
             200,
         )
-        main_menu_txt = linpg.lang.get_text("MainMenu")
+
         self.exit_confirm_menu = linpg.Message(
-            main_menu_txt["other"]["tip"],
-            main_menu_txt["other"]["exit_confirm"],
-            (main_menu_txt["other"]["confirm"], main_menu_txt["other"]["deny"]),
+            linpg.lang.get_text("Global", "tip"),
+            linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"),
+            (linpg.lang.get_text("Global", "yes"), linpg.lang.get_text("Global", "no")),
             True,
             return_button=1,
             escape_button=1,
@@ -107,7 +107,7 @@ if GAMESTART is True and __name__ == "__main__":
     linpg.display.init()
     # 窗口标题图标
     linpg.display.set_icon(r"Assets/image/UI/icon.png")
-    linpg.display.set_caption(linpg.lang.get_text("GameTitle"))
+    linpg.display.set_caption("A Story of Us")
     # 主菜单模块
     mainMenu = MainMenu()
     # 主循环
