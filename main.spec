@@ -9,7 +9,6 @@ a = Analysis(
    datas=[
       ('Assets','Assets'),
       ('Data','Data'),
-      ('Lang','Lang'),
       ('icon.ico','.')
    ],
    hiddenimports=[
