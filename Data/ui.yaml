@@ -40,7 +40,7 @@ developer_info:
     width: 30%
     x: center
     y: 70%
-  src: Assets/image/UI/setting_baseImg.png
+  src: Assets/image/UI/setting_bg.png
   width: 50%
   x: center
   y: center
