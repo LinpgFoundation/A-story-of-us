@@ -10,9 +10,9 @@ dialogs:
       last_dialog_id: null
       narrator: null
       next_dialog_id:
-        target: 1
+        target: id_001
         type: default
-    1:
+    id_001:
       background_img: bg1.png
       background_music: bgm1.ogg
       characters_img: null
@@ -22,31 +22,31 @@ dialogs:
       last_dialog_id: head
       narrator: null
       next_dialog_id:
-        target: 2
+        target: id_002
         type: default
-    2:
+    id_002:
       background_img: bg1.png
       background_music: bgm1.ogg
       characters_img: null
       content:
       - We live deep in the forest and hope that no one will find us.
-      last_dialog_id: 1
+      last_dialog_id: id_001
       narrator: null
       next_dialog_id:
-        target: 3
+        target: id_003
         type: default
-    3:
+    id_003:
       background_img: bg1.png
       background_music: bgm1.ogg
       characters_img: null
       content:
       - Until one day... And this is the beginning of our story.
-      last_dialog_id: 2
+      last_dialog_id: id_002
       narrator: null
       next_dialog_id:
-        target: 4
+        target: id_004
         type: changeScene
-    4:
+    id_004:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -55,12 +55,12 @@ dialogs:
       content:
       - Lucy, are you ready to go out?
       - We have a lot of work that needs to be done today!
-      last_dialog_id: 3
+      last_dialog_id: id_003
       narrator: Maria
       next_dialog_id:
-        target: 5
+        target: id_005
         type: default
-    5:
+    id_005:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -68,12 +68,12 @@ dialogs:
       - lucy.png<d>
       content:
       - My name is Maria, and as you can tell from my outfit, I am a witch.
-      last_dialog_id: 4
+      last_dialog_id: id_004
       narrator: null
       next_dialog_id:
-        target: 6
+        target: id_006
         type: default
-    6:
+    id_006:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -81,12 +81,12 @@ dialogs:
       - lucy.png
       content:
       - Yeah! Give me just one moment.
-      last_dialog_id: 5
+      last_dialog_id: id_005
       narrator: Lucy
       next_dialog_id:
-        target: 7
+        target: id_007
         type: default
-    7:
+    id_007:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -95,12 +95,12 @@ dialogs:
       content:
       - This is my little sister, Lucy. She is a witch, too.
       - However, she is quite naughty and always brings me lots of troubles.
-      last_dialog_id: 6
+      last_dialog_id: id_006
       narrator: null
       next_dialog_id:
-        target: 8
+        target: id_008
         type: default
-    8:
+    id_008:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -108,12 +108,12 @@ dialogs:
       - lucy.png
       content:
       - Come on, maria, you cannot say that!
-      last_dialog_id: 7
+      last_dialog_id: id_007
       narrator: Lucy
       next_dialog_id:
-        target: 9
+        target: id_009
         type: default
-    9:
+    id_009:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -121,25 +121,26 @@ dialogs:
       - lucy.png<d>
       content:
       - What? I did not even say one word!
-      last_dialog_id: 8
+      last_dialog_id: id_008
       narrator: Maria
       next_dialog_id:
-        target: 10
+        target: id_010
         type: default
-    10:
+    id_010:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - We always argue with each other, but still, we love each other deep in our hearts.
-      last_dialog_id: 9
+      - We always argue with each other, but still, we love each other deep in our
+        hearts.
+      last_dialog_id: id_009
       narrator: null
       next_dialog_id:
-        target: 11
+        target: id_011
         type: default
-    11:
+    id_011:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
@@ -148,25 +149,26 @@ dialogs:
       content:
       - In addition, today we have to go out and find some food.
       - It has been rainy for days, and we are running out of food.
-      last_dialog_id: 10
+      last_dialog_id: id_010
       narrator: null
       next_dialog_id:
-        target: 12
+        target: id_012
         type: default
-    12:
+    id_012:
       background_img: bg2.png
       background_music: bgm2.ogg
       characters_img:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - Nevertheless, today is a sunny day, and it is nice to go out and have some fun.
-      last_dialog_id: 11
+      - Nevertheless, today is a sunny day, and it is nice to go out and have some
+        fun.
+      last_dialog_id: id_011
       narrator: null
       next_dialog_id:
-        target: 13
+        target: id_013
         type: changeScene
-    13:
+    id_013:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -174,12 +176,12 @@ dialogs:
       - lucy.png
       content:
       - I miss the sunlight so much!
-      last_dialog_id: 12
+      last_dialog_id: id_012
       narrator: Lucy
       next_dialog_id:
-        target: 14
+        target: id_014
         type: default
-    14:
+    id_014:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -188,12 +190,12 @@ dialogs:
       content:
       - So do I! But do not forget our mission.
       - We have to find some food.
-      last_dialog_id: 13
+      last_dialog_id: id_013
       narrator: Maria
       next_dialog_id:
-        target: 15
+        target: id_015
         type: default
-    15:
+    id_015:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -201,26 +203,27 @@ dialogs:
       - lucy.png
       content:
       - Ok... I see.
-      last_dialog_id: 14
+      last_dialog_id: id_014
       narrator: Lucy
       next_dialog_id:
-        target: 16
+        target: id_016
         type: default
-    16:
+    id_016:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
       - maria.png<d>
       - lucy.png<d>
       content:
-      - After several continuous rainy days, it should be easier for us to find mushrooms in the forest.
+      - After several continuous rainy days, it should be easier for us to find mushrooms
+        in the forest.
       - Most of them are filled with nutrition and taste delicious.
-      last_dialog_id: 15
+      last_dialog_id: id_015
       narrator: null
       next_dialog_id:
-        target: 17
+        target: id_017
         type: default
-    17:
+    id_017:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -228,12 +231,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Suddenly, I hear some noise.
-      last_dialog_id: 16
+      last_dialog_id: id_016
       narrator: null
       next_dialog_id:
-        target: 18
+        target: id_018
         type: default
-    18:
+    id_018:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -241,12 +244,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Did you hear anything? What is that?
-      last_dialog_id: 17
+      last_dialog_id: id_017
       narrator: Maria
       next_dialog_id:
-        target: 19
+        target: id_019
         type: default
-    19:
+    id_019:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -254,12 +257,12 @@ dialogs:
       - lucy.png
       content:
       - I do hear something. The sounds are coming from the horses!
-      last_dialog_id: 18
+      last_dialog_id: id_018
       narrator: Lucy
       next_dialog_id:
-        target: 20
+        target: id_020
         type: default
-    20:
+    id_020:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -267,12 +270,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Hide yourself, right now!
-      last_dialog_id: 19
+      last_dialog_id: id_019
       narrator: Maria
       next_dialog_id:
-        target: 21
+        target: id_021
         type: default
-    21:
+    id_021:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -282,12 +285,12 @@ dialogs:
       - We hide in the bushes nearby.
       - My instinct is right. Some knights arrive shortly after riding on their houses.
       - And they stop near the spot where we just stood.
-      last_dialog_id: 20
+      last_dialog_id: id_020
       narrator: null
       next_dialog_id:
-        target: 22
+        target: id_022
         type: default
-    22:
+    id_022:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -295,12 +298,12 @@ dialogs:
       - lucy.png
       content:
       - Are they looking for us?
-      last_dialog_id: 21
+      last_dialog_id: id_021
       narrator: Lucy
       next_dialog_id:
-        target: 23
+        target: id_023
         type: default
-    23:
+    id_023:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -308,12 +311,12 @@ dialogs:
       - lucy.png<d>
       content:
       - I am not sure. Be quiet, and we will find out.
-      last_dialog_id: 22
+      last_dialog_id: id_022
       narrator: Maria
       next_dialog_id:
-        target: 24
+        target: id_024
         type: default
-    24:
+    id_024:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -322,12 +325,12 @@ dialogs:
       content:
       - Listen up, we must find him before sunset!
       - He must be somewhere nearby!
-      last_dialog_id: 23
+      last_dialog_id: id_023
       narrator: Knight
       next_dialog_id:
-        target: 25
+        target: id_025
         type: default
-    25:
+    id_025:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -335,12 +338,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Yes, sir!
-      last_dialog_id: 24
+      last_dialog_id: id_024
       narrator: Other knights
       next_dialog_id:
-        target: 26
+        target: id_026
         type: default
-    26:
+    id_026:
       background_img: bg3.png
       background_music: bgm4.ogg
       characters_img:
@@ -348,12 +351,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Then they spread out.
-      last_dialog_id: 25
+      last_dialog_id: id_025
       narrator: null
       next_dialog_id:
-        target: 27
+        target: id_027
         type: default
-    27:
+    id_027:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -362,12 +365,12 @@ dialogs:
       content:
       - We have to leave now and go home.
       - Otherwise, they may find us, and we will have big trouble.
-      last_dialog_id: 26
+      last_dialog_id: id_026
       narrator: Maria
       next_dialog_id:
-        target: 28
+        target: id_028
         type: default
-    28:
+    id_028:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -375,12 +378,12 @@ dialogs:
       - lucy.png
       content:
       - Ok... What a pity.
-      last_dialog_id: 27
+      last_dialog_id: id_027
       narrator: Lucy
       next_dialog_id:
-        target: 29
+        target: id_029
         type: default
-    29:
+    id_029:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -388,12 +391,12 @@ dialogs:
       - lucy.png<d>
       content:
       - Then we leave without making any sound.
-      last_dialog_id: 28
+      last_dialog_id: id_028
       narrator: null
       next_dialog_id:
-        target: 30
+        target: id_030
         type: default
-    30:
+    id_030:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -401,12 +404,12 @@ dialogs:
       - lucy.png<d>
       content:
       - To be continue...
-      last_dialog_id: 29
+      last_dialog_id: id_029
       narrator: null
       next_dialog_id:
-        target: 31
+        target: id_031
         type: default
-    31:
+    id_031:
       background_img: bg3.png
       background_music: bgm3.ogg
       characters_img:
@@ -415,6 +418,6 @@ dialogs:
       content:
       - Thanks for playing this demo!
       - Please click to go back to the main menu.
-      last_dialog_id: 30
+      last_dialog_id: id_030
       narrator: null
       next_dialog_id: null
