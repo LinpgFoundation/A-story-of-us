@@ -1,8 +1,5 @@
 # import linpg game engine 导入linpg引擎
-try:
-    import linpgdev as linpg
-except Exception:
-    import linpg
+import linpg  # type: ignore
 
 # initialize the window 创建窗口
 linpg.display.init()
