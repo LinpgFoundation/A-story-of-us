@@ -5,3 +5,4 @@ crash_reports/
 dist/
 logs/
 build/
+Cache/

@@ -18,6 +18,7 @@ a = Analysis(
       "yaml",
       "linpg",
       "pygame",
+      "PySimpleGUI",
       "pygame.locals",
       "pygame.colordict",
       "pygame._sdl2",

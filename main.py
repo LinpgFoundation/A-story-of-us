@@ -1,11 +1,14 @@
 # import linpg game engine 导入linpg引擎
+from typing import Optional
 import linpg  # type: ignore
 
 # initialize the window 创建窗口
 linpg.display.init()
 
 # dialog system 对话系统
-def dialog(chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
+def dialog(
+    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
+) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize dialog module 初始化对话系统模块
@@ -22,7 +25,9 @@ def dialog(chapterType: str, chapterId: int, part: str, projectName: str = None)
 
 
 # dialog editor system 对话编辑器
-def dialogEditor(chapterType: str, chapterId: int, part: str, projectName: str = None) -> None:
+def dialogEditor(
+    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
+) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize editor module 加载编辑器
@@ -47,13 +52,9 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         200,
     )
     # a panel that is used to ensure that user will not exit the game accidentally 退出确认面板
-    __exit_confirm_panel: linpg.Message = linpg.Message(
+    __exit_confirm_panel: linpg.ConfirmMessageWindow = linpg.ConfirmMessageWindow(
         linpg.lang.get_text("Global", "tip"),
         linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"),
-        (linpg.lang.get_text("Global", "yes"), linpg.lang.get_text("Global", "no")),
-        True,
-        return_button=1,
-        escape_button=1,
     )
     # a button that will show exit confirm panel when it is clicked 退出按钮
     __exit_button: linpg.Button = linpg.load.button(
@@ -62,12 +63,14 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
         200,
     )
+    # Main menu's background image 主菜单背景
+    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(
+        r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size()
+    )
 
     def __init__(self) -> None:
         # initialize primary module 初始化系统模块
         super().__init__()
-        # load main menu's background image 加载主菜单背景
-        self.bg_img = linpg.load.static_image(r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size())
         # initialize "BackToMainMenu" global value to False 初始化返回菜单判定参数
         linpg.global_value.set("BackToMainMenu", False)
         # setup main menu's background music 设置背景音乐
@@ -78,16 +81,19 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         # ensure the background music is play 确认背景音乐在播放
         self.play_bgm()
         # draw the background image onto the screen 画出背景图片
-        self.bg_img.draw_on_screen()
+        self.__BACKGROUND_IMAGE.draw_on_screen()
         # input events handling 处理输入
         if linpg.controller.get_event("confirm"):
             if self.__developer_info_panel.is_visible():
                 if self.__developer_info_panel.item_being_hovered == "notice":
                     self.__developer_info_panel.set_visible(False)
-            elif self.__developer_info_panel.is_hidden() and self.__show_developer_info_button.is_hovered():
+            elif (
+                self.__developer_info_panel.is_hidden()
+                and self.__show_developer_info_button.is_hovered()
+            ):
                 self.__developer_info_panel.set_visible(True)
             elif self.__exit_button.is_hovered():
-                if self.__exit_confirm_panel.show() == 0:
+                if self.__exit_confirm_panel.show() == linpg.ConfirmMessageWindow.YES():
                     self.stop()
             else:
                 dialog("main_chapter", 1, "dialog_example")
@@ -111,7 +117,7 @@ if GAMESTART is True and __name__ == "__main__":
     # set title 窗口标题
     linpg.display.set_caption("A Story of Us")
     # initialize main module 主菜单模块
-    mainMenu = MainMenu()
+    mainMenu: MainMenu = MainMenu()
     # main loop 主循环
     while mainMenu.is_playing():
         mainMenu.draw_on_screen()

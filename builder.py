@@ -16,7 +16,7 @@ check_call(["pyinstaller", "--noconsole", "main.spec"])
 shutil.move(os.path.join("dist", "main"), os.path.join("dist", "A_story_of_us"))
 
 # 删除opencv
-shutil.rmtree(os.path.join("dist", "A_story_of_us", "cv2"))
+Builder.delete_file_if_exist(os.path.join("dist", "A_story_of_us", "cv2"))
 
 # 移除移除的缓存文件
 folders_need_remove: tuple[str, ...] = ("build", "logs", "__pycache__", "crash_reports")
