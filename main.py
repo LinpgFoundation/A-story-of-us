@@ -54,7 +54,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
     # a panel that is used to ensure that user will not exit the game accidentally 退出确认面板
     __exit_confirm_panel: linpg.ConfirmMessageWindow = linpg.ConfirmMessageWindow(
         linpg.lang.get_text("Global", "tip"),
-        linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"),
+        "",
     )
     # a button that will show exit confirm panel when it is clicked 退出按钮
     __exit_button: linpg.Button = linpg.load.button(
@@ -93,6 +93,9 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             ):
                 self.__developer_info_panel.set_visible(True)
             elif self.__exit_button.is_hovered():
+                self.__exit_confirm_panel.update_message(
+                    linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm")
+                )
                 if self.__exit_confirm_panel.show() == linpg.ConfirmMessageWindow.YES():
                     self.stop()
             else:

@@ -1,6 +1,6 @@
 developer_info:
   height: 50%
-  hidden: true
+  visibility: false
   type: container
   items:
   - color: white
