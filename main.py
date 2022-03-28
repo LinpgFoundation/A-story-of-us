@@ -6,9 +6,7 @@ import linpg  # type: ignore
 linpg.display.init()
 
 # dialog system 对话系统
-def dialog(
-    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
-) -> None:
+def dialog(chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize dialog module 初始化对话系统模块
@@ -25,9 +23,7 @@ def dialog(
 
 
 # dialog editor system 对话编辑器
-def dialogEditor(
-    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
-) -> None:
+def dialogEditor(chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize editor module 加载编辑器
@@ -44,6 +40,13 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
 
     # a panel that will show info of developer 开发者信息面板
     __developer_info_panel = linpg.ui.generate("developer_info")
+    # a button that will open dialog editor 打开对话编辑器的按钮
+    __show_dialog_editor_button: linpg.Button = linpg.load.button(
+        r"Assets/image/UI/edit.png",
+        (linpg.display.get_width() * 0.85, linpg.display.get_height() * 0.05),
+        (linpg.display.get_height() * 0.06, linpg.display.get_height() * 0.05),
+        200,
+    )
     # a button that will show developer info panel when it is clicked 开发者信息按钮
     __show_developer_info_button: linpg.Button = linpg.load.button(
         r"Assets/image/UI/important.png",
@@ -64,9 +67,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         200,
     )
     # Main menu's background image 主菜单背景
-    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(
-        r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size()
-    )
+    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size())
 
     def __init__(self) -> None:
         # initialize primary module 初始化系统模块
@@ -87,24 +88,20 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             if self.__developer_info_panel.is_visible():
                 if self.__developer_info_panel.item_being_hovered == "notice":
                     self.__developer_info_panel.set_visible(False)
-            elif (
-                self.__developer_info_panel.is_hidden()
-                and self.__show_developer_info_button.is_hovered()
-            ):
+            elif self.__show_dialog_editor_button.is_hovered():
+                dialogEditor("main_chapter", 1, "dialog_example")
+                self.set_bgm_volume(linpg.media.volume.background_music / 100)
+            elif self.__show_developer_info_button.is_hovered():
                 self.__developer_info_panel.set_visible(True)
             elif self.__exit_button.is_hovered():
-                self.__exit_confirm_panel.update_message(
-                    linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm")
-                )
+                self.__exit_confirm_panel.update_message(linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"))
                 if self.__exit_confirm_panel.show() == linpg.ConfirmMessageWindow.YES():
                     self.stop()
             else:
                 dialog("main_chapter", 1, "dialog_example")
                 self.set_bgm_volume(linpg.media.volume.background_music / 100)
-        elif linpg.controller.get_event("scroll_up"):
-            dialogEditor("main_chapter", 1, "dialog_example")
-            self.set_bgm_volume(linpg.media.volume.background_music / 100)
         # draw the ui (if they are visible) 画出ui
+        self.__show_dialog_editor_button.draw_on_screen()
         self.__show_developer_info_button.draw_on_screen()
         self.__developer_info_panel.draw_on_screen()
         self.__exit_button.draw_on_screen()
