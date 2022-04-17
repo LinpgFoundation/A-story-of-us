@@ -2,6 +2,9 @@
 from typing import Optional
 import linpg  # type: ignore
 
+# organize json files in Data folder 整理Data文件夹内的配置文件
+linpg.config.organize(r"Data/*.json")
+
 # initialize the window 创建窗口
 linpg.display.init()
 

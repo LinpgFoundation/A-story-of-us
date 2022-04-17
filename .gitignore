@@ -6,3 +6,5 @@ dist/
 logs/
 build/
 Cache/
+.vs/
+Data/main_chapter/chapter1_dialogs_English.json

@@ -62,6 +62,6 @@ https://discord.gg/3wz6bs5jvu
 
 # :memo: License / 版权说明
 
-This repository was created to demonstrate the basic functionalities provided by Linpg Engine. You are strictly prohibited from redistributing any part of this repository in any form. This repository can only be used for non-commercial educational purposes. Tigeia Workshop (the developer of this game and the Linpg engine) will not be responsible for any disputes and damages caused by the usage of neither this repository nor the Linpg Engine.
+This repository was created to demonstrate the basic functionalities provided by Linpg Engine. You are strictly prohibited from redistributing any part of this repository in any form (The only exceptions are the "main.py", "builder.py", and any files under the "Data" directory). This repository can only be used for non-commercial educational purposes. Tigeia Workshop (the developer of this game and the Linpg engine) will not be responsible for any disputes and damages caused by the usage of neither this repository nor the Linpg Engine.
 
-这个资源库的创建只是为了用于展示Linpg引擎提供的基本功能。严禁任何人以任何形式重新分发这个资源库的任何部分。本资源库只能用于非商业的教育目的。Tigeia Workshop（本游戏和Linpg引擎的开发者）将不对任何因使用本资源库或Linpg引擎而引起的纠纷和损失负责。
+这个资源库的创建只是为了用于展示Linpg引擎提供的基本功能。严禁任何人以任何形式重新分发这个资源库的任何部分（唯一的例外只有"main.py"，"builder.py"， 以及当前“Data“文件夹内的所有文件）。本资源库只能用于非商业的教育目的。Tigeia Workshop（本游戏和Linpg引擎的开发者）将不对任何因使用本资源库或Linpg引擎而引起的纠纷和损失负责。
