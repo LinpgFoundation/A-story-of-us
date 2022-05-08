@@ -10,7 +10,7 @@ from linpg import Builder  # type: ignore
 Builder.delete_file_if_exist("dist")
 
 # 打包main文件
-check_call(["pyinstaller", "--noconsole", "main.spec"])
+check_call(["pyinstaller", "main.spec"])
 
 # 重命名文件
 MOVE(PATH.join("dist", "main"), PATH.join("dist", "A_story_of_us"))

@@ -45,14 +45,14 @@
             {
                 "height": "20%",
                 "name": "notice",
-                "src": "Assets/image/UI/notice.png",
+                "src": "Assets/image/ui/notice.png",
                 "type": "button",
                 "width": "30%",
                 "x": "center",
                 "y": "70%"
             }
         ],
-        "src": "Assets/image/UI/setting_bg.png",
+        "src": "Assets/image/ui/setting_bg.png",
         "type": "container",
         "visibility": false,
         "width": "50%",

@@ -21,8 +21,7 @@ null:
 # section 2
 [ns]bg2.png
 [bgm]bgm2.ogg
-[cin]maria.png
-[cin]lucy.png
+[cin]maria.png&lucy.png
 
 Maria:
 - Lucy, are you ready to go out?

@@ -45,14 +45,14 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
     __developer_info_panel = linpg.ui.generate("developer_info")
     # a button that will open dialog editor 打开对话编辑器的按钮
     __show_dialog_editor_button: linpg.Button = linpg.load.button(
-        r"Assets/image/UI/edit.png",
+        r"Assets/image/ui/edit.png",
         (linpg.display.get_width() * 0.85, linpg.display.get_height() * 0.05),
         (linpg.display.get_height() * 0.06, linpg.display.get_height() * 0.05),
         200,
     )
     # a button that will show developer info panel when it is clicked 开发者信息按钮
     __show_developer_info_button: linpg.Button = linpg.load.button(
-        r"Assets/image/UI/important.png",
+        r"Assets/image/ui/important.png",
         (linpg.display.get_width() * 0.9, linpg.display.get_height() * 0.05),
         (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
         200,
@@ -64,13 +64,13 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
     )
     # a button that will show exit confirm panel when it is clicked 退出按钮
     __exit_button: linpg.Button = linpg.load.button(
-        r"Assets/image/UI/quit.png",
+        r"Assets/image/ui/quit.png",
         (linpg.display.get_width() * 0.95, linpg.display.get_height() * 0.05),
         (linpg.display.get_height() * 0.05, linpg.display.get_height() * 0.05),
         200,
     )
     # Main menu's background image 主菜单背景
-    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(r"Assets/image/UI/bg0.png", (0, 0), linpg.display.get_size())
+    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(r"Assets/image/ui/bg0.png", (0, 0), linpg.display.get_size())
 
     def __init__(self) -> None:
         # initialize primary module 初始化系统模块
@@ -116,7 +116,7 @@ GAMESTART: bool = True
 # main function 游戏主进程
 if GAMESTART is True and __name__ == "__main__":
     # set icon 窗口图标
-    linpg.display.set_icon(r"Assets/image/UI/icon.png")
+    linpg.display.set_icon(r"Assets/image/ui/icon.png")
     # set title 窗口标题
     linpg.display.set_caption("A Story of Us")
     # initialize main module 主菜单模块

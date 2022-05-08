@@ -17,6 +17,7 @@ a = Analysis(
       "tkinter",
       "yaml",
       "linpg",
+      "linpgassets",
       "pygame",
       "PySimpleGUI",
       "pygame.locals",
