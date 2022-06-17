@@ -6,5 +6,7 @@ dist/
 logs/
 build/
 Cache/
-.vs/
+.vs*/
 Data/main_chapter/chapter1_dialogs_English.json
+.mypy_cache
+.idea/

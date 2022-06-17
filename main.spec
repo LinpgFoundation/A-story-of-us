@@ -23,6 +23,7 @@ a = Analysis(
       "pygame.locals",
       "pygame.colordict",
       "pygame._sdl2",
+      "tcod",
    ],
    hookspath=[],
    runtime_hooks=[],
