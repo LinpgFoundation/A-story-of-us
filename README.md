@@ -1,12 +1,12 @@
 # A-story-of-us
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/TigeiaWorkshop/A-story-of-us.svg?style=for-the-badge&logo=appveyor?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TigeiaWorkshop/A-story-of-us/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/TigeiaWorkshop/A-story-of-us.svg?style=for-the-badge&logo=appveyor?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TigeiaWorkshop/A-story-of-us/context:python) ![GitHub all releases](https://img.shields.io/github/downloads/TigeiaWorkshop/A-story-of-us/total?style=for-the-badge&logo=appveyor) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TigeiaWorkshop/A-story-of-us?include_prereleases&style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linpg?style=for-the-badge&logo=appveyor)
+![GitHub all releases](https://img.shields.io/github/downloads/LinpgFoundation/A-story-of-us/total?style=for-the-badge&logo=appveyor) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/LinpgFoundation/A-story-of-us?include_prereleases&style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/linpg?style=for-the-badge&logo=appveyor)
 
 ##### You have to install the latest version of Linpg Engine to run this game!
 
 你必须安装最新版本linpg引擎才能运行该游戏！
 
-##### For more information about Linpg Engine, please visit https://github.com/TigeiaWorkshop/linpg.
+##### For more information about Linpg Engine, please visit https://github.com/LinpgFoundation/linpg.
 
 如果你想了解更多有关linpg引擎的详情，可以点击上方末尾的URL链接。
 
@@ -50,7 +50,7 @@ This branch holds the current stable version.
 
 # :books: How to contribute / 如何贡献代码
 
-See **[CONTRIBUTING.md](https://github.com/TigeiaWorkshop/A-story-of-us/blob/master/CONTRIBUTING.md)**
+See **[CONTRIBUTING.md](https://github.com/LinpgFoundation/A-story-of-us/blob/master/CONTRIBUTING.md)**
 
 
 

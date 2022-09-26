@@ -2,7 +2,7 @@ from os import path as PATH
 from shutil import move as MOVE
 from subprocess import check_call
 
-from linpg import Builder  # type: ignore
+from linpgtoolbox.builder import Builder  # type: ignore
 
 # 删除dist文件夹
 Builder.delete_file_if_exist("dist")

@@ -11,11 +11,13 @@ linpg.display.init()
 
 
 # dialog system 对话系统
-def dialog(chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None) -> None:
+def dialog(
+    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
+) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize dialog module 初始化对话系统模块
-    DIALOG: linpg.DialogSystem = linpg.DialogSystem()
+    DIALOG: linpg.VisualNovelSystem = linpg.VisualNovelSystem()
     if chapterType is None:
         DIALOG.load(r"Save/save.yaml")
     else:
@@ -28,12 +30,14 @@ def dialog(chapterType: str, chapterId: int, part: str, projectName: Optional[st
 
 
 # dialog editor system 对话编辑器
-def dialogEditor(chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None) -> None:
+def dialogEditor(
+    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
+) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize editor module 加载编辑器
     DIALOG: linpg.DialogEditor = linpg.DialogEditor()
-    DIALOG.load(chapterType, chapterId, part, projectName)
+    DIALOG.new(chapterType, chapterId, part, projectName)
     # main loop 主循环
     while DIALOG.is_playing():
         DIALOG.draw_on_screen()
@@ -43,32 +47,47 @@ def dialogEditor(chapterType: str, chapterId: int, part: str, projectName: Optio
 # 主菜单
 class MainMenu(linpg.SystemWithBackgroundMusic):
     # a panel that will show info of developer 开发者信息面板
-    __developer_info_panel: linpg.GameObjectsDictContainer = linpg.ui.generate_container("developer_info")
+    __developer_info_panel: linpg.GameObjectsDictContainer = (
+        linpg.ui.generate_container("developer_info")
+    )
     # a button that will open dialog editor 打开对话编辑器的按钮
     __show_dialog_editor_button: linpg.Button = linpg.load.button(
         r"Assets/image/ui/edit.png",
         (int(linpg.display.get_width() * 0.85), int(linpg.display.get_height() * 0.05)),
-        (int(linpg.display.get_height() * 0.06), int(linpg.display.get_height() * 0.05)),
+        (
+            int(linpg.display.get_height() * 0.06),
+            int(linpg.display.get_height() * 0.05),
+        ),
         200,
     )
     # a button that will show developer info panel when it is clicked 开发者信息按钮
     __show_developer_info_button: linpg.Button = linpg.load.button(
         r"Assets/image/ui/important.png",
         (int(linpg.display.get_width() * 0.9), int(linpg.display.get_height() * 0.05)),
-        (int(linpg.display.get_height() * 0.05), int(linpg.display.get_height() * 0.05)),
+        (
+            int(linpg.display.get_height() * 0.05),
+            int(linpg.display.get_height() * 0.05),
+        ),
         200,
     )
     # a panel that is used to ensure that user will not exit the game accidentally 退出确认面板
-    __exit_confirm_panel: linpg.ConfirmMessageWindow = linpg.ConfirmMessageWindow(linpg.lang.get_text("Global", "tip"), "")
+    __exit_confirm_panel: linpg.ConfirmMessageWindow = linpg.ConfirmMessageWindow(
+        linpg.lang.get_text("Global", "tip"), ""
+    )
     # a button that will show exit confirm panel when it is clicked 退出按钮
     __exit_button: linpg.Button = linpg.load.button(
         r"Assets/image/ui/quit.png",
         (int(linpg.display.get_width() * 0.95), int(linpg.display.get_height() * 0.05)),
-        (int(linpg.display.get_height() * 0.05), int(linpg.display.get_height() * 0.05)),
+        (
+            int(linpg.display.get_height() * 0.05),
+            int(linpg.display.get_height() * 0.05),
+        ),
         200,
     )
     # Main menu's background image 主菜单背景
-    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(r"Assets/image/ui/bg0.png", (0, 0), linpg.display.get_size())
+    __BACKGROUND_IMAGE: linpg.StaticImage = linpg.load.static_image(
+        r"Assets/image/ui/bg0.png", (0, 0), linpg.display.get_size()
+    )
 
     def __init__(self) -> None:
         # initialize primary module 初始化系统模块
@@ -95,7 +114,9 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             elif self.__show_developer_info_button.is_hovered():
                 self.__developer_info_panel.set_visible(True)
             elif self.__exit_button.is_hovered():
-                self.__exit_confirm_panel.update_message(linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"))
+                self.__exit_confirm_panel.update_message(
+                    linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm")
+                )
                 if self.__exit_confirm_panel.show() == linpg.ConfirmMessageWindow.YES():
                     self.stop()
             else:
@@ -123,6 +144,3 @@ if GAMESTART is True and __name__ == "__main__":
     while mainMenu.is_playing():
         mainMenu.draw_on_screen()
         linpg.display.flip()
-
-# safely release occupied memory 释放内容占用
-linpg.display.quit()

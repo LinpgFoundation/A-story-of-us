@@ -2,7 +2,7 @@
 [id]1
 [lang]English
 
-[part]dialog_example
+[section]dialog_example
 
 // section 1
 [bgi]bg1.png
