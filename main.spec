@@ -12,18 +12,8 @@ a = Analysis(
       ('icon.ico','.')
    ],
    hiddenimports=[
-      "numpy",
-      "PIL.Image",
-      "tkinter",
-      "yaml",
       "linpg",
       "linpgassets",
-      "pygame",
-      "PySimpleGUI",
-      "pygame.locals",
-      "pygame.colordict",
-      "pygame._sdl2",
-      "tcod",
    ],
    hookspath=[],
    runtime_hooks=[],

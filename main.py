@@ -1,7 +1,5 @@
 # import linpg game engine 导入linpg引擎
-from typing import Optional
-
-import linpg  # type: ignore
+import linpg
 
 # organize json files in Data folder 整理Data文件夹内的配置文件
 linpg.config.organize(r"Data/*.json")
@@ -11,17 +9,12 @@ linpg.display.init()
 
 
 # dialog system 对话系统
-def dialog(
-    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
-) -> None:
+def dialog(chapterType: str, chapterId: int, part: str) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize dialog module 初始化对话系统模块
     DIALOG: linpg.VisualNovelSystem = linpg.VisualNovelSystem()
-    if chapterType is None:
-        DIALOG.load(r"Save/save.yaml")
-    else:
-        DIALOG.new(chapterType, chapterId, part, projectName)
+    DIALOG.new(chapterType, chapterId, part)
     # DIALOG.auto_save = True
     # main loop 主循环
     while DIALOG.is_playing():
@@ -30,14 +23,12 @@ def dialog(
 
 
 # dialog editor system 对话编辑器
-def dialogEditor(
-    chapterType: str, chapterId: int, part: str, projectName: Optional[str] = None
-) -> None:
+def dialogEditor(chapterType: str, chapterId: int, part: str) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize editor module 加载编辑器
     DIALOG: linpg.DialogEditor = linpg.DialogEditor()
-    DIALOG.new(chapterType, chapterId, part, projectName)
+    DIALOG.new(chapterType, chapterId, part)
     # main loop 主循环
     while DIALOG.is_playing():
         DIALOG.draw_on_screen()
@@ -92,8 +83,6 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
     def __init__(self) -> None:
         # initialize primary module 初始化系统模块
         super().__init__()
-        # initialize "BackToMainMenu" global value to False 初始化返回菜单判定参数
-        linpg.global_value.set("BackToMainMenu", False)
         # setup main menu's background music 设置背景音乐
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         self.set_bgm_volume(linpg.volume.get_background_music() / 100)
