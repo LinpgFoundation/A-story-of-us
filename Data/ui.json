@@ -52,7 +52,7 @@
                 "y": "70%"
             }
         ],
-        "src": "Assets/image/ui/setting_bg.png",
+        "src": "<@ui>container.png",
         "type": "container",
         "visibility": false,
         "width": "50%",

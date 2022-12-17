@@ -1,5 +1,5 @@
 # import linpg game engine 导入linpg引擎
-import linpg
+import linpg  # type: ignore
 
 # organize json files in Data folder 整理Data文件夹内的配置文件
 linpg.config.organize(r"Data/*.json")
@@ -119,10 +119,10 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
 
 
 # a tag that is used to control whether to start the game 是否启动游戏
-GAMESTART: bool = True
+GAME_START: bool = True
 
 # main function 游戏主进程
-if GAMESTART is True and __name__ == "__main__":
+if GAME_START is True and __name__ == "__main__":
     # set icon 窗口图标
     linpg.display.set_icon(r"Assets/image/ui/icon.png")
     # set title 窗口标题
