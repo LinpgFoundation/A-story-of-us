@@ -86,12 +86,14 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         # setup main menu's background music 设置背景音乐
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         self.set_bgm_volume(linpg.volume.get_background_music() / 100)
+        # compile all the dialogue scripts in Data directory 编译Data文件夹内的所有原始视觉小说脚本文件
+        linpg.ScriptCompiler.compile_files_in_directory("Data")
 
-    def draw_on_screen(self) -> None:
+    def draw(self, _surface: linpg.ImageSurface) -> None:
         # ensure the background music is play 确认背景音乐在播放
         self.play_bgm()
         # draw the background image onto the screen 画出背景图片
-        self.__BACKGROUND_IMAGE.draw_on_screen()
+        self.__BACKGROUND_IMAGE.draw(_surface)
         # input events handling 处理输入
         if linpg.controller.get_event("confirm"):
             if self.__developer_info_panel.is_visible():
@@ -112,10 +114,10 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
                 dialog("main_chapter", 1, "dialog_example")
                 self.set_bgm_volume(linpg.volume.get_background_music() / 100)
         # draw the ui (if they are visible) 画出ui
-        self.__show_dialog_editor_button.draw_on_screen()
-        self.__show_developer_info_button.draw_on_screen()
-        self.__developer_info_panel.draw_on_screen()
-        self.__exit_button.draw_on_screen()
+        self.__show_dialog_editor_button.draw(_surface)
+        self.__show_developer_info_button.draw(_surface)
+        self.__developer_info_panel.draw(_surface)
+        self.__exit_button.draw(_surface)
 
 
 # a tag that is used to control whether to start the game 是否启动游戏
