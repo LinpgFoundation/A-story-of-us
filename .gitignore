@@ -7,6 +7,6 @@ logs/
 build/
 Cache/
 .vs*/
-Data/main_chapter/chapter1_dialogs_English.json
+Data/main_chapter/*.json
 .mypy_cache
 .idea/

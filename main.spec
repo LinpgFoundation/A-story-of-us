@@ -14,6 +14,7 @@ a = Analysis(
    hiddenimports=[
       "linpg",
       "linpgassets",
+      "PySimpleGUI",
    ],
    hookspath=[],
    runtime_hooks=[],

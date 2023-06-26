@@ -1,5 +1,5 @@
 # import linpg game engine 导入linpg引擎
-import linpg  # type: ignore
+import linpg
 
 # organize json files in Data folder 整理Data文件夹内的配置文件
 linpg.config.organize(r"Data/*.json")
