@@ -87,7 +87,7 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         self.set_bgm_volume(linpg.volume.get_background_music() / 100)
         # compile all the dialogue scripts in Data directory 编译Data文件夹内的所有原始视觉小说脚本文件
-        linpg.ScriptCompiler.compile_files_in_directory("Data")
+        linpg.ScriptCompiler.compile("Data")
 
     def draw(self, _surface: linpg.ImageSurface) -> None:
         # ensure the background music is play 确认背景音乐在播放

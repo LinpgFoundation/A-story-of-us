@@ -7,6 +7,5 @@ logs/
 build/
 Cache/
 .vs*/
-Data/main_chapter/*.json
 .mypy_cache
 .idea/
