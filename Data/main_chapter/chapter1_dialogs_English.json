@@ -1,0 +1,556 @@
+{
+    "compiledAt": 1695851599,
+    "dialogs": {
+        "dialog_example": {
+            "head": {
+                "background_image": "bg1.png",
+                "background_music": "bgm1.ogg",
+                "character_images": [],
+                "contents": [
+                    "This is our world... The place we live...",
+                    "A world that hates the witches, and their magic."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~01",
+                    "type": "default"
+                },
+                "previous": null
+            },
+            "~01": {
+                "background_image": "bg1.png",
+                "background_music": "bgm1.ogg",
+                "character_images": [],
+                "contents": [
+                    "The king killed nearly all witches.",
+                    "Fortunately, we escaped from the massacre but struggled to stay alive."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~02",
+                    "type": "default"
+                },
+                "previous": "head"
+            },
+            "~02": {
+                "background_image": "bg1.png",
+                "background_music": "bgm1.ogg",
+                "character_images": [],
+                "contents": [
+                    "We live deep in the forest and hope that no one will find us."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~03",
+                    "type": "default"
+                },
+                "previous": "~01"
+            },
+            "~03": {
+                "background_image": "bg1.png",
+                "background_music": "bgm1.ogg",
+                "character_images": [],
+                "contents": [
+                    "Until one day... And this is the beginning of our story."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~04",
+                    "type": "scene"
+                },
+                "previous": "~02"
+            },
+            "~04": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "comments": [
+                    "section 2"
+                ],
+                "contents": [
+                    "Lucy, are you ready to go out?",
+                    "We have a lot of work that needs to be done today!"
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~05",
+                    "type": "default"
+                },
+                "previous": null
+            },
+            "~05": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "My name is Maria, and as you can tell from my outfit, I am a witch."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~06",
+                    "type": "default"
+                },
+                "previous": "~04"
+            },
+            "~06": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "Yeah! Give me just one moment."
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~07",
+                    "type": "default"
+                },
+                "previous": "~05"
+            },
+            "~07": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "This is my little sister, Lucy. She is a witch, too.",
+                    "However, she is quite naughty and always brings me lots of troubles."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~08",
+                    "type": "default"
+                },
+                "previous": "~06"
+            },
+            "~08": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "Come on, maria, you cannot say that!"
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~09",
+                    "type": "default"
+                },
+                "previous": "~07"
+            },
+            "~09": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "What? I did not even say one word!"
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~10",
+                    "type": "default"
+                },
+                "previous": "~08"
+            },
+            "~10": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "We always argue with each other, but still, we love each other deep in our hearts."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~11",
+                    "type": "default"
+                },
+                "previous": "~09"
+            },
+            "~11": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "In addition, today we have to go out and find some food.",
+                    "It has been rainy for days, and we are running out of food."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~12",
+                    "type": "default"
+                },
+                "previous": "~10"
+            },
+            "~12": {
+                "background_image": "bg2.png",
+                "background_music": "bgm2.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Nevertheless, today is a sunny day, and it is nice to go out and have some fun."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~13",
+                    "type": "scene"
+                },
+                "previous": "~11"
+            },
+            "~13": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "comments": [
+                    "section 3"
+                ],
+                "contents": [
+                    "I miss the sunlight so much!"
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~14",
+                    "type": "default"
+                },
+                "previous": null
+            },
+            "~14": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "So do I! But do not forget our mission.",
+                    "We have to find some food."
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~15",
+                    "type": "default"
+                },
+                "previous": "~13"
+            },
+            "~15": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "Ok... I see."
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~16",
+                    "type": "default"
+                },
+                "previous": "~14"
+            },
+            "~16": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "After several continuous rainy days, it should be easier for us to find mushrooms in the forest.",
+                    "Most of them are filled with nutrition and taste delicious."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~17",
+                    "type": "default"
+                },
+                "previous": "~15"
+            },
+            "~17": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Suddenly, I hear some noise."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~18",
+                    "type": "default"
+                },
+                "previous": "~16"
+            },
+            "~18": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Did you hear anything? What is that?"
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~19",
+                    "type": "default"
+                },
+                "previous": "~17"
+            },
+            "~19": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "I do hear something. The sounds are coming from the horses!"
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~20",
+                    "type": "default"
+                },
+                "previous": "~18"
+            },
+            "~20": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Hide yourself, right now!"
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~21",
+                    "type": "default"
+                },
+                "previous": "~19"
+            },
+            "~21": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "We hide in the bushes nearby.",
+                    "My instinct is right. Some knights arrive shortly after riding on their houses.",
+                    "And they stop near the spot where we just stood."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~22",
+                    "type": "default"
+                },
+                "previous": "~20"
+            },
+            "~22": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "Are they looking for us?"
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~23",
+                    "type": "default"
+                },
+                "previous": "~21"
+            },
+            "~23": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "I am not sure. Be quiet, and we will find out."
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~24",
+                    "type": "default"
+                },
+                "previous": "~22"
+            },
+            "~24": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Listen up, we must find him before sunset!",
+                    "He must be somewhere nearby!"
+                ],
+                "narrator": "Knight",
+                "next": {
+                    "target": "~25",
+                    "type": "default"
+                },
+                "previous": "~23"
+            },
+            "~25": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Yes, sir!"
+                ],
+                "narrator": "Other knights",
+                "next": {
+                    "target": "~26",
+                    "type": "default"
+                },
+                "previous": "~24"
+            },
+            "~26": {
+                "background_image": "bg3.png",
+                "background_music": "bgm4.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Then they spread out."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~27",
+                    "type": "default"
+                },
+                "previous": "~25"
+            },
+            "~27": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "We have to leave now and go home.",
+                    "Otherwise, they may find us, and we will have big trouble."
+                ],
+                "narrator": "Maria",
+                "next": {
+                    "target": "~28",
+                    "type": "default"
+                },
+                "previous": "~26"
+            },
+            "~28": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png"
+                ],
+                "contents": [
+                    "Ok... What a pity."
+                ],
+                "narrator": "Lucy",
+                "next": {
+                    "target": "~29",
+                    "type": "default"
+                },
+                "previous": "~27"
+            },
+            "~29": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Then we leave without making any sound."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~30",
+                    "type": "default"
+                },
+                "previous": "~28"
+            },
+            "~30": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "To be continue..."
+                ],
+                "narrator": "",
+                "next": {
+                    "target": "~31",
+                    "type": "default"
+                },
+                "previous": "~29"
+            },
+            "~31": {
+                "background_image": "bg3.png",
+                "background_music": "bgm3.ogg",
+                "character_images": [
+                    "maria.png&silent",
+                    "lucy.png&silent"
+                ],
+                "contents": [
+                    "Thanks for playing this demo!",
+                    "Please click to go back to the main menu."
+                ],
+                "narrator": "",
+                "next": {},
+                "previous": "~30"
+            }
+        }
+    },
+    "id": 1,
+    "language": "English"
+}
