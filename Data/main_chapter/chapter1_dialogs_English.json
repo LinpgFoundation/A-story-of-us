@@ -1,11 +1,18 @@
 {
-    "compiledAt": 1695851599,
+    "compiler": {
+        "compiledAt": 1701222842,
+        "reversion": 0,
+        "version": 2
+    },
     "dialogs": {
         "dialog_example": {
             "head": {
                 "background_image": "bg1.png",
                 "background_music": "bgm1.ogg",
                 "character_images": [],
+                "comments": [
+                    "section 1"
+                ],
                 "contents": [
                     "This is our world... The place we live...",
                     "A world that hates the witches, and their magic."
