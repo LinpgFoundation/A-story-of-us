@@ -1,6 +1,6 @@
 {
     "compiler": {
-        "compiledAt": 1701222842,
+        "compiledAt": 1707259323,
         "reversion": 0,
         "version": 2
     },
@@ -9,7 +9,6 @@
             "head": {
                 "background_image": "bg1.png",
                 "background_music": "bgm1.ogg",
-                "character_images": [],
                 "comments": [
                     "section 1"
                 ],
@@ -17,22 +16,18 @@
                     "This is our world... The place we live...",
                     "A world that hates the witches, and their magic."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~01",
                     "type": "default"
-                },
-                "previous": null
+                }
             },
             "~01": {
                 "background_image": "bg1.png",
                 "background_music": "bgm1.ogg",
-                "character_images": [],
                 "contents": [
                     "The king killed nearly all witches.",
                     "Fortunately, we escaped from the massacre but struggled to stay alive."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~02",
                     "type": "default"
@@ -42,11 +37,9 @@
             "~02": {
                 "background_image": "bg1.png",
                 "background_music": "bgm1.ogg",
-                "character_images": [],
                 "contents": [
                     "We live deep in the forest and hope that no one will find us."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~03",
                     "type": "default"
@@ -56,11 +49,9 @@
             "~03": {
                 "background_image": "bg1.png",
                 "background_music": "bgm1.ogg",
-                "character_images": [],
                 "contents": [
                     "Until one day... And this is the beginning of our story."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~04",
                     "type": "scene"
@@ -85,8 +76,7 @@
                 "next": {
                     "target": "~05",
                     "type": "default"
-                },
-                "previous": null
+                }
             },
             "~05": {
                 "background_image": "bg2.png",
@@ -98,7 +88,6 @@
                 "contents": [
                     "My name is Maria, and as you can tell from my outfit, I am a witch."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~06",
                     "type": "default"
@@ -133,7 +122,6 @@
                     "This is my little sister, Lucy. She is a witch, too.",
                     "However, she is quite naughty and always brings me lots of troubles."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~08",
                     "type": "default"
@@ -184,7 +172,6 @@
                 "contents": [
                     "We always argue with each other, but still, we love each other deep in our hearts."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~11",
                     "type": "default"
@@ -202,7 +189,6 @@
                     "In addition, today we have to go out and find some food.",
                     "It has been rainy for days, and we are running out of food."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~12",
                     "type": "default"
@@ -219,7 +205,6 @@
                 "contents": [
                     "Nevertheless, today is a sunny day, and it is nice to go out and have some fun."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~13",
                     "type": "scene"
@@ -243,8 +228,7 @@
                 "next": {
                     "target": "~14",
                     "type": "default"
-                },
-                "previous": null
+                }
             },
             "~14": {
                 "background_image": "bg3.png",
@@ -292,7 +276,6 @@
                     "After several continuous rainy days, it should be easier for us to find mushrooms in the forest.",
                     "Most of them are filled with nutrition and taste delicious."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~17",
                     "type": "default"
@@ -309,7 +292,6 @@
                 "contents": [
                     "Suddenly, I hear some noise."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~18",
                     "type": "default"
@@ -379,7 +361,6 @@
                     "My instinct is right. Some knights arrive shortly after riding on their houses.",
                     "And they stop near the spot where we just stood."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~22",
                     "type": "default"
@@ -465,7 +446,6 @@
                 "contents": [
                     "Then they spread out."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~27",
                     "type": "default"
@@ -517,7 +497,6 @@
                 "contents": [
                     "Then we leave without making any sound."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~30",
                     "type": "default"
@@ -534,7 +513,6 @@
                 "contents": [
                     "To be continue..."
                 ],
-                "narrator": "",
                 "next": {
                     "target": "~31",
                     "type": "default"
@@ -552,12 +530,10 @@
                     "Thanks for playing this demo!",
                     "Please click to go back to the main menu."
                 ],
-                "narrator": "",
-                "next": {},
                 "previous": "~30"
             }
         }
     },
-    "id": 1,
+    "id": "1",
     "language": "English"
 }
