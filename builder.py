@@ -1,3 +1,4 @@
+import shutil
 from os import path as PATH
 from shutil import move as MOVE
 from subprocess import check_call
@@ -9,6 +10,13 @@ Builder.remove("dist")
 
 # 打包main文件
 check_call(["pyinstaller", "main.spec"])
+
+# move assets
+_ADDITIONAL_ASSETS: tuple[str, ...] = ("Assets", "Data")
+for additional_dir in _ADDITIONAL_ASSETS:
+    shutil.copytree(
+        PATH.join(".", additional_dir), PATH.join("dist", "main", additional_dir)
+    )
 
 # 重命名文件
 MOVE(PATH.join("dist", "main"), PATH.join("dist", "A_story_of_us"))

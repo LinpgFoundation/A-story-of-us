@@ -1,10 +1,7 @@
 # import linpg game engine 导入linpg引擎
 import linpg
 
-# organize json files in Data folder 整理Data文件夹内的配置文件
-linpg.config.organize(r"Data/*.json")
-
-# initialize the window 创建窗口
+# initialize the window 初始化窗口
 linpg.display.init()
 
 
@@ -13,7 +10,7 @@ def dialog(chapterType: str, chapterId: int, part: str) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize dialog module 初始化对话系统模块
-    DIALOG: linpg.VisualNovelSystem = linpg.VisualNovelSystem()
+    DIALOG: linpg.VisualNovelPlayer = linpg.VisualNovelPlayer()
     DIALOG.new(chapterType, chapterId, part)
     # DIALOG.auto_save = True
     # main loop 主循环
@@ -27,7 +24,7 @@ def dialogEditor(chapterType: str, chapterId: int, part: str) -> None:
     # unload main menu's background music 卸载主菜单的音乐
     linpg.media.unload()
     # initialize editor module 加载编辑器
-    DIALOG: linpg.DialogEditor = linpg.DialogEditor()
+    DIALOG: linpg.VisualNovelEditor = linpg.VisualNovelEditor()
     DIALOG.new(chapterType, chapterId, part)
     # main loop 主循环
     while DIALOG.is_playing():
@@ -61,10 +58,6 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         ),
         200,
     )
-    # a panel that is used to ensure that user will not exit the game accidentally 退出确认面板
-    __exit_confirm_panel: linpg.ConfirmMessageWindow = linpg.ConfirmMessageWindow(
-        linpg.lang.get_text("Global", "tip"), ""
-    )
     # a button that will show exit confirm panel when it is clicked 退出按钮
     __exit_button: linpg.Button = linpg.load.button(
         r"Assets/image/ui/quit.png",
@@ -86,15 +79,13 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
         # setup main menu's background music 设置背景音乐
         self.set_bgm(r"Assets/music/main_menu_bgm.ogg")
         self.set_bgm_volume(linpg.volume.get_background_music() / 100)
-        # compile all the dialogue scripts in Data directory 编译Data文件夹内的所有原始视觉小说脚本文件
-        linpg.ScriptCompiler.compile("Data")
 
     def draw(self, _surface: linpg.ImageSurface) -> None:
         # ensure the background music is play 确认背景音乐在播放
         self.play_bgm()
         # draw the background image onto the screen 画出背景图片
         self.__BACKGROUND_IMAGE.draw(_surface)
-        # input events handling 处理输入
+        # handling input events 处理输入
         if linpg.controller.get_event("confirm"):
             if self.__developer_info_panel.is_visible():
                 if self.__developer_info_panel.item_being_hovered == "notice":
@@ -105,10 +96,11 @@ class MainMenu(linpg.SystemWithBackgroundMusic):
             elif self.__show_developer_info_button.is_hovered():
                 self.__developer_info_panel.set_visible(True)
             elif self.__exit_button.is_hovered():
-                self.__exit_confirm_panel.update_message(
-                    linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm")
-                )
-                if self.__exit_confirm_panel.show() == linpg.ConfirmMessageWindow.YES():
+                # make sure user wants to quit
+                if linpg.ConfirmationDialogBox(
+                    linpg.lang.get_text("Global", "tip"),
+                    linpg.lang.get_text("LeavingWithoutSavingWarning", "exit_confirm"),
+                ).show():
                     self.stop()
             else:
                 dialog("main_chapter", 1, "dialog_example")
@@ -131,6 +123,8 @@ if GAME_START is True and __name__ == "__main__":
     linpg.display.set_caption("A Story of Us")
     # initialize main module 主菜单模块
     mainMenu: MainMenu = MainMenu()
+    # compile all the dialogue scripts in Data directory 编译Data文件夹内的所有原始视觉小说脚本文件
+    linpg.ScriptCompiler.compile("Data")
     # main loop 主循环
     while mainMenu.is_playing():
         mainMenu.draw_on_screen()

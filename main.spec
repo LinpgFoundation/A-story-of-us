@@ -7,14 +7,11 @@ a = Analysis(
    pathex=['D:\\GitHub\\A-story-of-us'],
    binaries=[],
    datas=[
-      ('Assets','Assets'),
-      ('Data','Data'),
       ('icon.ico','.')
    ],
    hiddenimports=[
       "linpg",
       "linpgassets",
-      "PySimpleGUI",
    ],
    hookspath=[],
    runtime_hooks=[],
